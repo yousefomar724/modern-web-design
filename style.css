@@ -1,0 +1,118 @@
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    color: #c1c1c1;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+/* Header */
+.container{padding: 1.2rem 6rem;}
+
+nav{display: flex;color: #ff3c88;}
+
+.logo{flex: 2;}
+
+.logo span{font-size: 1.3rem;font-weight: 700;}
+
+.menu{flex: 1;font-size: 15px;}
+
+.menu ul{display: flex;list-style: none;}
+
+.menu li{margin: 0 0.5rem;}
+
+.menu a{
+    padding: 0.4rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ff3c88;
+}
+
+.menu a:hover{
+    background-color: #ff3c88;
+    color: #fff;
+}
+
+.menu .btn{
+    background-color: #ff3c88;
+    color: #fff;
+    padding: 0.4rem;
+    border-radius: 5px;
+}
+
+/* Main Section */
+main{display: flex;}
+
+.text{flex: 1;padding-top: 7rem;}
+
+.text h1{
+    font-size: 3rem;
+    color: #000;
+    font-weight: medium;
+}
+
+.text .description{font-size: 0.8rem;padding-right: 30px;}
+
+.main-btn{
+    padding: 0.6rem 1.1rem;
+    background-color: #ff3c88;
+    color: #fff !important;
+    font-size: 17px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.text .contact{
+    color: #ff3c88;
+    margin-left: 1rem;
+    font-size: 15px;
+}
+
+main .banner{padding-top: 5rem;width: 40vw;}
+
+.banner img{height: 100%;width: 100%;}
+
+/* Responsive */
+@media screen and (max-width: 787px){
+    nav{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .logo{padding-bottom: 40px;}
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        margin: 10px 0;
+    }
+
+    /* Main Section */
+    main{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .text{padding-top: 3rem;}
+
+    main .banner{width: 450px;}
+} 
