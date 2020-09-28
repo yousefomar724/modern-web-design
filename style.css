@@ -14,6 +14,8 @@ html{
     text-rendering: optimizeLegibility;
 }
 
+body{width: 100%;height: 100vh;}
+
 section{
     width: 100%;
     height: 100vh;
@@ -36,9 +38,10 @@ nav{display: flex;color: #ff3c88;}
 
 .menu a{
     padding: 0.4rem;
-    border-radius: 5px;
+    border-radius: 30px;
     text-decoration: none;
     color: #ff3c88;
+    transition: all 0.3s ease;
 }
 
 .menu a:hover{
@@ -50,13 +53,13 @@ nav{display: flex;color: #ff3c88;}
     background-color: #ff3c88;
     color: #fff;
     padding: 0.4rem;
-    border-radius: 5px;
+    border-radius: 30px;
 }
 
 /* Main Section */
 main{display: flex;}
 
-.text{flex: 1;padding-top: 7rem;}
+.text{flex: 1;padding-top: 5rem;}
 
 .text h1{
     font-size: 3rem;
@@ -69,10 +72,18 @@ main{display: flex;}
 .main-btn{
     padding: 0.6rem 1.1rem;
     background-color: #ff3c88;
-    color: #fff !important;
+    color: #fff;
     font-size: 17px;
     text-decoration: none;
+    border: 2px solid #fff;
     border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.main-btn:hover{
+    background-color: #fff;
+    color: #ff3c88;
+    border: 2px solid #ff3c88;
 }
 
 .text .contact{
@@ -81,9 +92,10 @@ main{display: flex;}
     font-size: 15px;
 }
 
-main .banner{padding-top: 5rem;width: 40vw;}
+main .banner{padding-top: 4rem;width: 40vw;}
 
 .banner img{height: 100%;width: 100%;}
+
 
 /* Responsive */
 @media screen and (max-width: 787px){
