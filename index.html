@@ -3,57 +3,494 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <title>Modern Web Design</title>
+    <title>Personal Portfolio | Yousef</title>
+    <!--=== CSS ===-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--=== BOX ICONS ===-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!--=== NORMALIZE ===-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" />
 </head>
 <body>
+    <!--=== HEADER ===-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
 
-    <section>
-        <div class="container">
+            <div>
+                <a href="#" class="nav__logo">Youssef</a>
+            </div>
 
-            <!--Header-->
-            <nav>
-
-                <div class="logo"><i>Company</i>&nbsp; <span>LOGO</span></div>
-
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About&nbsp;Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact&nbsp;Us</a></li>
-                        <li><a href="#" class="btn">Get&nbsp;Started</a></li>
-                    </ul>
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
                 </div>
 
-            </nav>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#works" class="nav__link">Works</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-            <!--Main Section-->
-            <main>
-
-                <div class="text">
-                    <h1>Web</h1>
-                    <h1>Design</h1>
-                    <br>
-                    <div class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, porro cum aliquam velit <br>cupiditate magni temporibus ipsam nobis. Esse nam nobis repudiandae. Iure alias eum aut quia <br>qui dolor doloribus.
+    <!--=== MAIN ===-->
+    <main class="l-main">
+        <!--=== HOME ===-->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__data">
+                    <div class="home__img">
+                        <img src="assets/img/about.jpg" alt="">
                     </div>
-                    <br><br>
 
-                    <a href="#" class="main-btn">Learn More</a>
-                    <a href="#" class="contact">or contanct</a>
+                    <h1 class="home__title">Youssef Omar</h1>
+                    <span class="home__profession">Frontend Developer</span>
+
+                    <div class="home__social">
+                        <a href="#" class="home__social-link">
+                            <i class="bx bxl-linkedin"></i>
+                        </a>
+                        <a href="#" class="home__social-link">
+                            <i class="bx bxl-github"></i>
+                        </a>
+                        <a href="#" class="home__social-link">
+                            <i class="bx bxl-dribbble"></i>
+                        </a>
+                        <a href="#" class="home__social-link">
+                            <i class="bx bxl-behance"></i>
+                        </a>
+                    </div>
+
+                    <a download="" href="#" class="btn home__btn">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--=== ABOUT ===-->
+        <section class="about section" id="about">
+            <span class="section-subtitle">My intro</span>
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__data">
+                    <p class="about__description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi similique ipsum sapiente explicabo minima expedita adipisci, soluta animi harum labore!
+                    </p>
+                    <img src="assets/img/2.jpg" alt="" class="about__img">
                 </div>
 
-                <div class="banner"><img src="img/wfh_9.svg"></div>
-
-            </main>
-
-        </div>
-
-    </section>
-
-    <div class="clip"></div>
+                <div>
+                    <div class="about__information">
+                        <h3 class="about__information-title">Information</h3>
     
+                        <div class="about__information-data">
+                            <i class="bx bx-user about__information-icon"></i>
+                            <span>Youssef Omar</span>
+                        </div>
+    
+                        <div class="about__information-data">
+                            <i class="bx bx-phone about__information-icon"></i>
+                            <span>+20 01100124479</span>
+                        </div>
+    
+                        <div class="about__information-data">
+                            <i class="bx bx-envelope about__information-icon"></i>
+                            <span>Yousefomar724@gmail.com</span>
+                        </div>
+                    </div>
+    
+                    <div class="about__information">
+                        <h3 class="about__information-title">Experience and support</h3>
+    
+                        <div class="about__information-data">
+                            <i class="bx bx-medal about__information-icon"></i>
+                            <div>
+                                <span class="about__information-subtitle">
+                                    1 Year
+                                </span>
+                                <span class="about__information-subtitle-small">
+                                    Experience
+                                </span>
+                            </div>
+                        </div>
+    
+                        <div class="about__information-data">
+                            <i class="bx bx-briefcase about__information-icon"></i>
+                            <div>
+                                <span class="about__information-subtitle">
+                                    30+ Projects
+                                </span>
+                                <span class="about__information-subtitle-small">
+                                    Completed
+                                </span>
+                            </div>
+                        </div>
+    
+                        <div class="about__information-data">
+                            <i class="bx bx-support about__information-icon"></i>
+                            <div>
+                                <span class="about__information-subtitle">
+                                    Support
+                                </span>
+                                <span class="about__information-subtitle-small">
+                                    Online 24/7
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=== SKILLS ===-->
+        <section class="skills section" id="skills">
+            <span class="section-subtitle">Why Choose Me</span>
+            <h2 class="section-title">My Expertise Area</h2>
+
+            <div class="skills__container bd-grid">
+                <div class="skills__content">
+                    <h3 class="skills__subtitle">Frontend</h3>
+
+                    <div class="skills__data">
+                        <span class="skills__name">Html/Css</span>
+                        <span class="skills__number">80%</span>
+                        <span class="skills__bar skills__html"></span>
+                    </div>
+
+                    <div class="skills__data">
+                        <span class="skills__name">Javascript</span>
+                        <span class="skills__number">50%</span>
+                        <span class="skills__bar skills__js"></span>
+                    </div>
+
+                    <div class="skills__data">
+                        <span class="skills__name">React</span>
+                        <span class="skills__number">70%</span>
+                        <span class="skills__bar skills__react"></span>
+                    </div>
+
+                    <div class="skills__data">
+                        <span class="skills__name">Vue</span>
+                        <span class="skills__number">90%</span>
+                        <span class="skills__bar skills__vue"></span>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__subtitle">Backend</h3>
+
+                    <div class="skills__data">
+                        <span class="skills__name">Python</span>
+                        <span class="skills__number">80%</span>
+                        <span class="skills__bar skills__python"></span>
+                    </div>
+
+                    <div class="skills__data">
+                        <span class="skills__name">Php</span>
+                        <span class="skills__number">70%</span>
+                        <span class="skills__bar skills__php"></span>
+                    </div>
+
+                    <div class="skills__data">
+                        <span class="skills__name">Node Js</span>
+                        <span class="skills__number">60%</span>
+                        <span class="skills__bar skills__node"></span>
+                    </div>
+
+                    <div class="skills__data">
+                        <span class="skills__name">Firebase</span>
+                        <span class="skills__number">90%</span>
+                        <span class="skills__bar skills__firebase"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=== EDUCATION ===-->
+        <section class="education section">
+            <span class="section-subtitle">Qualifications</span>
+            <h2 class="section-title">My Education</h2>
+
+            <div class="education__container bd-grid">
+                <div class="education__content">
+                    <div>
+                        <h3 class="education__year">2016 - 2020</h3>
+                        <span class="education__university">ASWAN University</span>
+                    </div>
+
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+
+                    <div>
+                        <h3 class="education__race">Natural Science Bachelor Degree</h3>
+                        <span class="education__speciality">
+                            Geology
+                        </span>
+                    </div>
+                </div>
+
+                <div class="education__content">
+                    <div>
+                        <h3 class="education__year">2021 - 2022</h3>
+                        <span class="education__university">Information Technology Institute (ITI)</span>
+                    </div>
+
+                    <div class="education__time">
+                        <span class="education__rounder"></span>
+                        <span class="education__line"></span>
+                    </div>
+
+                    <div>
+                        <h3 class="education__race">Software Engineering</h3>
+                        <span class="education__speciality">
+                            Web Development
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=== SERVICES ===-->
+        <section class="services section" id="services">
+            <span class="section-subtitle">What I Offer</span>
+            <h2 class="section-title">My Services</h2>
+
+            <div class="services__container bd-grid">
+                <div class="services__content">
+                    <i class="bx bx-code services__icon"></i>
+                    <h3 class="services__title">Web Design</h3>
+                    <p class="services__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequuntur ratione dicta obcaecati quod a et est ullam veritatis explicabo.
+                    </p>
+                </div>
+
+                <div class="services__content">
+                    <i class="bx bx-pen services__icon"></i>
+                    <h3 class="services__title">Graphic Design</h3>
+                    <p class="services__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequuntur ratione dicta obcaecati quod a et est ullam veritatis explicabo.
+                    </p>
+                </div>
+
+                <div class="services__content">
+                    <i class="bx bx-brush services__icon"></i>
+                    <h3 class="services__title">UI/UX</h3>
+                    <p class="services__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequuntur ratione dicta obcaecati quod a et est ullam veritatis explicabo.
+                    </p>
+                </div>
+
+                <div class="services__content">
+                    <i class="bx bx-server services__icon"></i>
+                    <h3 class="services__title">Backend Development</h3>
+                    <p class="services__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequuntur ratione dicta obcaecati quod a et est ullam veritatis explicabo.
+                    </p>
+                </div>
+
+                <div class="services__content">
+                    <i class="bx bx-pencil services__icon"></i>
+                    <h3 class="services__title">Content Writing</h3>
+                    <p class="services__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequuntur ratione dicta obcaecati quod a et est ullam veritatis explicabo.
+                    </p>
+                </div>
+
+                <div class="services__content">
+                    <i class="bx bx-mobile services__icon"></i>
+                    <h3 class="services__title">Mobile Interface</h3>
+                    <p class="services__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequuntur ratione dicta obcaecati quod a et est ullam veritatis explicabo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--=== PROJECT IN MIND ===-->
+        <section class="project section">
+            <div class="project__container bd-grid">
+                <div class="project__data">
+                    <h2 class="section-title project__title">
+                        Do you have a project in mind
+                    </h2>
+                    <p class="project__description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolore non atque dolor? Temporibus esse sint incidunt? Alias, ex minus!
+                    </p>
+                    <a href="#contact" class="btn btn__light">Contact Me</a>
+                </div>
+
+                <img src="assets/img/1.jpg" alt="" class="project__img">
+            </div>
+        </section>
+
+        <!--=== WORKS ===-->
+        <section class="works section" id="works">
+            <span class="section-subtitle">My Portfolio</span>
+            <h2 class="section-title">Recent Works</h2>
+
+            <div class="works__container bd-grid">
+                <div class="works__img">
+                    <img src="assets/img/project4.jpg" alt="">
+
+                    <div class="works__data">
+                        <a href="#" class="works__link">
+                            <i class="bx bx-link-alt"></i>
+                        </a>
+                        <span class="works__title">Work 1</span>
+                    </div>
+                </div>
+
+                <div class="works__img">
+                    <img src="assets/img/project2.jpg" alt="">
+
+                    <div class="works__data">
+                        <a href="#" class="works__link">
+                            <i class="bx bx-link-alt"></i>
+                        </a>
+                        <span class="works__title">Work 2</span>
+                    </div>
+                </div>
+
+                <div class="works__img">
+                    <img src="assets/img/project5.jpg" alt="">
+
+                    <div class="works__data">
+                        <a href="#" class="works__link">
+                            <i class="bx bx-link-alt"></i>
+                        </a>
+                        <span class="works__title">Work 3</span>
+                    </div>
+                </div>
+
+                <div class="works__img">
+                    <img src="assets/img/project3.jpg" alt="">
+
+                    <div class="works__data">
+                        <a href="#" class="works__link">
+                            <i class="bx bx-link-alt"></i>
+                        </a>
+                        <span class="works__title">Work 4</span>
+                    </div>
+                </div>
+
+                <div class="works__img">
+                    <img src="assets/img/project6.jpeg" alt="">
+
+                    <div class="works__data">
+                        <a href="#" class="works__link">
+                            <i class="bx bx-link-alt"></i>
+                        </a>
+                        <span class="works__title">Work 5</span>
+                    </div>
+                </div>
+
+                <div class="works__img">
+                    <img src="assets/img/project1.jpg" alt="">
+
+                    <div class="works__data">
+                        <a href="#" class="works__link">
+                            <i class="bx bx-link-alt"></i>
+                        </a>
+                        <span class="works__title">Work 6</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--=== CONTACT ===-->
+        <section class="contact section" id="contact">
+            <span class="section-subtitle">Contact Me</span>
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" class="contact__input" placeholder="Name">
+                        <input type="email" class="contact__input" placeholder="Email">
+                    </div>
+
+                    <input type="text" class="contact__input" placeholder="Project">
+
+                    <textarea name="" id="" cols="0" rows="10" placeholder="Message" class="contact__input"></textarea>
+
+                    <input type="submit" value="Send Message" class="btn contact__btn">
+                </form>
+
+                <div>
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Call me</h3>
+                        <span class="contact__text">999-000-123</span>
+                        <span class="contact__text">999-000-123</span>
+                    </div>
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">E-mail</h3>
+                        <span class="contact__text">Yousefomar724@gmail.com</span>
+                        <span class="contact__text">contactme@gmail.com</span>
+                    </div>
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">Location</h3>
+                        <span class="contact__text">Av. Gabal-takok #534</span>
+                        <span class="contact__text">Aswan - EGYPT</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--=== FOOTER ===-->
+    <footer class="footer">
+        <div class="footer__container bd-grid">
+            <h1 class="footer__title">Youssef</h1>
+            <p class="footer__description">
+                I am Youssef and this my personal website, consult me here
+            </p>
+
+            <div class="footer__social">
+                <a href="#" class="footer__link">
+                    <i class="bx bxl-facebook"></i>
+                </a>
+                <a href="#" class="footer__link">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+                <a href="#" class="footer__link">
+                    <i class="bx bxl-twitter"></i>
+                </a>
+                <a href="#" class="footer__link">
+                    <i class="bx bxl-youtube"></i>
+                </a>
+            </div>
+
+            <p class="footer__copy">
+                All Rights Reserved By Youssef Omar &copy; 2020
+            </p>
+        </div>
+    </footer>
+
+    <!--=== MAIN JS ===-->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
