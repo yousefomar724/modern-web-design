@@ -3,20 +3,20 @@
 
 /*=== VARIABLES ===*/
 :root{
-    --header-height: 3rem;
-    --nav-width: 324px;
+    --header-height:  3rem;
+    --nav-width:     324px;
 
     /* Font Weight*/
-    --fw-medium: 500;
-    --fw-semi-bold: 600;
-    --fw-bold: 700;
+    --fw-medium:     500;
+    --fw-semi-bold:  600;
+    --fw-bold:       700;
 
     /* Colors */
-    --first-color: #cc4b2c;
-    --first-color-dark: #662616;
-    --first-color-darken: #290f09;
-    --text-color: #54423d;
-    --first-color-light: #eae7e6;
+    --first-color:         #cc4b2c;
+    --first-color-dark:    #662616;
+    --first-color-darken:  #290f09;
+    --text-color:          #54423d;
+    --first-color-light:   #eae7e6;
     --first-color-lighten: #fffafa;
 
     /* Font & Typography */
@@ -64,7 +64,6 @@ body{
     color: var(--text-color);
     line-height: 1.6;
 }
-
 h1,h2,h3,p { margin: 0; }
 
 h3 { font-weight: var(--fw-bold); }
@@ -74,18 +73,15 @@ ul{
     padding: 0;
     list-style: none;
 }
-
 a{
     text-decoration: none;
     color: var(--text-color);
 }
-
 img{
     max-width: 100%;
     height: auto;
     display: block;
 }
-
 textarea { resize: none; }
 
 /* CLASS CSS (General Css Prop.) */
@@ -451,9 +447,13 @@ textarea { resize: none; }
 .works__img{
     position: relative;
     overflow: hidden;
-    width: auto;
-    height: auto;
     border-radius: .5rem;
+}
+.works__img img{
+    width: 100%;
+    height: 207px;
+    object-fit: cover;
+    object-position: center;
 }
 .works__data{
     position: absolute;
